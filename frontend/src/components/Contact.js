@@ -13,7 +13,7 @@ function Contact({ data }) {
     const fetchVisitCount = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:7071/api/GetResumeCounter"
+          "https://getadamsresumevisits.azurewebsites.net/api/GetResumeCounter?"
         );
         setVisitCount(response.data.count); // Assuming the response contains a `count` field
       } catch (error) {
@@ -30,7 +30,7 @@ function Contact({ data }) {
         <h1 style={{ textDecoration: "underline", color: "#114b5f" }}>
           {data.name}'s Resume
         </h1>
-        <p>Page visited {visitCount} times</p> {/* Display the visit count */}
+        <p>Page visited {visitCount} <b>time(s)</b></p> {/* Display the visit count */}
         <Card
           style={{
             marginTop: "20px",
