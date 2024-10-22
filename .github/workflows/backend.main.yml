@@ -7,7 +7,7 @@ on:
       - "backend/**"
 
 env:
-  AZURE_FUNCTIONAPP_NAME: 'GetResumeCounter'   # Correct function app name
+  AZURE_FUNCTIONAPP_NAME: GetResumeCounter  # Correct function app name
   AZURE_FUNCTIONAPP_PACKAGE_PATH: 'backend'       
   NODE_VERSION: '20.x'                     
 
