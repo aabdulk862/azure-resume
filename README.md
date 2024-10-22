@@ -1,4 +1,3 @@
-# azure-resume
 # Adam Abdulkadir's Resume
 
 This project is a personal resume website built with React and hosted on Azure. It showcases my professional background, skills, certifications, and projects, providing visitors with a comprehensive overview of my qualifications.
