@@ -20,7 +20,7 @@ const Employment = ({ data }) => {
           return (
             <Card
               style={{
-                width: "80%",
+                width: "100%",
                 marginTop: "20px",
                 marginBottom: "20px",
                 padding: "20px",

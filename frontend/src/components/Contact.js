@@ -25,12 +25,15 @@ function Contact({ data }) {
   }, []);
 
   return (
-    <Container style={{ fontSize: "1.2rem", marginBottom: "5rem", }}>
+    <Container style={{ fontSize: "1.2rem", marginBottom: "5rem" }}>
       <div className="App">
         <h1 style={{ textDecoration: "underline", color: "#114b5f" }}>
           {data.name}'s Resume
         </h1>
-        <p>Page visited {visitCount} <b>time(s)</b></p> {/* Display the visit count */}
+        <p>
+          Page visited <b>{visitCount} </b>time(s)
+        </p>{" "}
+        {/* Display the visit count */}
         <Card
           style={{
             marginTop: "20px",
@@ -40,6 +43,7 @@ function Contact({ data }) {
             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
             backgroundColor: "#f0f4f8",
             color: "#212e3a",
+            overflow: "hidden",
           }}
         >
           <h3>{data.role}</h3>
@@ -150,21 +154,29 @@ function Contact({ data }) {
           <h3>
             <u>Certifications</u>:
           </h3>
-          <div style={{ display: "flex", justifyContent: "flex-start" }}>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap", // Allow wrapping on smaller screens
+              justifyContent: "flex-start",
+              overflow: "hidden",
+              margin: "0 -10px",
+            }}
+          >
             <img
               src={Security}
               alt="Security+"
-              style={{ width: "15%", padding: "10px" }}
+              style={{ width: "100%", maxWidth: "150px", padding: "10px", flexShrink: 0 }}
             />
             <img
               src={AWS}
               alt="AWS Solutions Architect"
-              style={{ width: "15%", padding: "10px" }}
+              style={{ width: "100%", maxWidth: "150px", padding: "10px", flexShrink: 0 }}
             />
             <img
               src={Azure}
-              alt="AWS Solutions Architect"
-              style={{ width: "15%", padding: "10px" }}
+              alt="Azure Fundamentals"
+              style={{ width: "100%", maxWidth: "150px", padding: "10px", flexShrink: 0 }}
             />
           </div>
         </Card>
