@@ -9,7 +9,6 @@ const client = new CosmosClient(connectionString);
 const databaseId = "react-resume";   // Replace with your database ID
 const containerId = "Counter"; // Replace with your container ID
 
-
 app.http('GetResumeCounter', {
     methods: ['GET'],
     authLevel: 'anonymous',
