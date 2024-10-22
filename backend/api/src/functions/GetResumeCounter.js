@@ -42,4 +42,3 @@ app.http('GetResumeCounter', {
     }
 });
 
-
