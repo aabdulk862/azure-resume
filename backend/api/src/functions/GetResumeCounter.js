@@ -28,7 +28,6 @@ app.http('GetResumeCounter', {
             // Update the document with the new count
             visitDocument.count = updatedCount;
             await container.item('1', '1').replace(visitDocument);
-
             // Return the updated count
             return {
                 jsonBody: { count: updatedCount }
