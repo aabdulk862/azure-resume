@@ -186,3 +186,4 @@ function Contact({ data }) {
 }
 
 export default Contact;
+
